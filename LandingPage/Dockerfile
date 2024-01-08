@@ -8,9 +8,6 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["LandingPage.csproj", "LandingPage/"]
-RUN dotnet restore "LandingPage.csproj"
-COPY . .
-WORKDIR "/src/LandingPage"
 RUN dotnet build "LandingPage.csproj" -c Release -o /app/build
 
 FROM build AS publish
