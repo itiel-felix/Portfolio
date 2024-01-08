@@ -1,0 +1,25 @@
+﻿#foto {
+    width: 20%;
+    margin: 2rem 0;
+    border-radius: 100%
+}
+
+.welcome-section {
+    margin: 5rem 0 10rem 0;
+    color: white
+}
+
+.welcome-section h1{
+    margin-bottom: 1rem
+}
+
+.welcome-section p{
+    font-family:sans-serif;
+    line-height:1.5;
+    font-size:1.25rem;
+}
+
+ .skills ul{
+     list-style:none;
+     padding-left:0;
+ }

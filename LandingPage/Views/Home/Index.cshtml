@@ -1,0 +1,16 @@
+﻿@model HomeIndexViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome Stranger, my name is Itiel Felix (23)</h1>
+    <p>Soy un desarrollador full stack especializado en .NET y Javascript</a>.</p>
+    <img id="foto"
+         src="~/images/me.JPG" alt="picture of me" />
+
+    <partial name="_Presentation"/>
+    <partial name="_Skills"/>
+</div>
+
+<partial name="_ProjectsSection" model="Model.Projects"/>
