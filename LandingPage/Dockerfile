@@ -8,7 +8,7 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["./LandingPage/LandingPage.csproj", "LandingPage/"]
-RUN echo $(ls)
+RUN echo "$(ls)"
 RUN dotnet restore "./LandingPage/LandingPage.csproj"
 COPY . .
 WORKDIR "/src/LandingPage"
